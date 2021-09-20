@@ -1,44 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>banana speake</title>
+
     <style>
-        textarea {
-            width: 80%;
-            height: 10vh;
-            display: block;
-            margin: 1rem;
-            padding: 1rem;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 
-        #output{
-            border: 1px solid black;
-            width:80%;
-            height: 10vh;
-            
-            margin: 1rem;
-            padding: 1rem;
-        }
+      textarea {
+        width: 50%;
+        height: 5vh;
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        border: 6px solid #1e40af;
+        background-color: #fde68a;
+        border-radius: 3rem;
+      }
+
+      #output {
+        border: 6px solid #1e40af;
+        width: 50%;
+        height: 5vh;
+        background-color: #fde68a;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 3rem;
+      }
+
+      .button {
+        background-color: #4b5563;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 2rem;
+      }
+
+      h1 {
+        background-color: #fde68a;
+        border: #fbbf24;
+        color: #fbbf24;
+        text-align: center;
+        text-decoration: solid;
+        display: block;
+        padding: 3rem;
+        font-size: 64px;
+        border-radius: 2rem;
+      }
+      .heading-text {
+        background-color: #1e40af;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 2rem;
+      }
+
+      .image {
+        image-resolution: 1080p;
+      }
+      body {
+        background-image: url("img_jeans_jpg.jpg");
+        background-size: contain;
+        background-position: bottom;
+       
+        font-family: 'Rubik Mono One', sans-serif;
+      }
     </style>
+  </head>
 
-</head>
+  <body>
+    <h1>Banana Translate</h1>
 
-<body>
-    <h1>talk bananaa</h1>
-    <textarea id=txt-input
-     placeholder="put your text in english here and we will convert it into banana"></textarea>
-    <button id="btn-translate">translate</button>
+    <div class="heading-text" style="font-size: large">Type to Translate</div>
+    <textarea
+      id="txt-input"
+      placeholder="put your text in english here and we will convert it into banana"
+    ></textarea>
 
+    <button class="button" id="btn-translate">Convert Banana</button>
 
-    <div style="font-size: large;"> Out put will come here 👇</div>
+    <div class="heading-text" style="font-size: large">
+      Out put will come here 👇
+    </div>
     <div id="output"></div>
 
-    <script src="app.js" type="text/javascript"> </script>
-
-</body>
-
+    <script src="app.js" type="text/javascript"></script>
+  </body>
 </html>
